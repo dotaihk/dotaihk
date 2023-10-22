@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 15% 5%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .follow-us {
+            font-size: 2em;
+            margin-top: 2%;
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+            animation: moveUpAndDown 2s infinite;
+        }
+
+        .follow-us:hover {
+            color: blue;
+        }
+
+        @keyframes moveUpAndDown {
+            0% {transform: translateY(0);}
+            50% {transform: translateY(10px);}
+            100% {transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>DotAI</h1>
+        <a href="https://instagram.com/dotai.hk/" target="_blank" class="follow-us">Follow US</a>
+        <div class="follow-us-bottom">Follow US</div>
+    </div>
+</body>
+</html>
